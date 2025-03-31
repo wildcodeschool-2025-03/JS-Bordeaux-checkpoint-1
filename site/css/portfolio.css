@@ -80,6 +80,14 @@ p {
   background-color: var(--lightWildColor);
 }
 
+button {
+  border: 2px solid var(--borderColor);
+  color: var(--borderColor);
+  background-color: var(--lightWildColorwildColor);
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .skills {
   display: flex;
   flex-direction: row-reverse;
