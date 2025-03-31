@@ -63,11 +63,14 @@ main section:first-of-type {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  width: 100%;
 }
 
 .column {
