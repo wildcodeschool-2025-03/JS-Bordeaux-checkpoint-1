@@ -23,10 +23,40 @@ p {
   padding: 0 var(--gutter);
 }
 
+head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav {
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
 }
+
+.firstBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.firstBanner avatar{
+  width: 15vw;
+}
+
+@media (max-width: 700px) {
+  .avatar {
+      display: none;
+  }
+}
+
 
 .desktop {
   margin: 0;
@@ -52,15 +82,37 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
+
+
+  .skill--cards{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+@media (max-width: 700px) {
+  .skill--cards{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+  
+
+
 
 .column {
   border-left: var(--styledBorder);
@@ -72,7 +124,10 @@ p {
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
 }
-
+.column{
+  margin-top: 40px;
+  width: 50%;
+}
 .column:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -95,6 +150,13 @@ p {
 .projects a {
   color: var(--purple);
 }
+.projects h2:first-of-type{
+  text-align: center;
+}
+.projects p:first-of-type{
+  text-align: center;
+}
+
 
 .box {
   width: 25%;
@@ -107,4 +169,19 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 70%;
+}
+
+.box-container{
+  display: flex;
+}
+
+.every-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
