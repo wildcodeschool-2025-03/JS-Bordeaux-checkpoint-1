@@ -7,7 +7,11 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  if (a + b < 180) {
+    return 180 - (a + b);
+  } else {
+    return "La somme des deux angles est supérieure à 180°";
+  }
 }
 
 module.exports = thirdAngle;

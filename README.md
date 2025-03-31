@@ -24,7 +24,7 @@ Chaque checkpoint implique un ensemble d’étapes similaires :
 
 4. Ouvrir le dépôt cloné dans ton IDE
 5. Suivre les instructions du checkpoint (généralement dans le fichier README du dépôt du checkpoint, comme celui-ci)
-6. Valider après chaque étape, avec un message de validation qui met en évidence la partie terminée (par exemple `finish algo1 in part 1` ou `finish CSS step 3 in part 2`)
+6. Valider après chaque étape, avec un message de validation qui met en évidence la partie terminée (par exemple `finish algo1 in part 1` ou `finish CSS step 3 in part 2`)-u--
 7. Pousser tes modifications vers GitHub, de préférence après chaque validation
 
 # Instructions pour ce checkpoint
