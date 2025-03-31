@@ -45,7 +45,7 @@ Ensuite, tu peux exécuter les tests :
 ```sh
 npm test # cette commande exécute tous les tests
 
-npm run test:1 # cette commande exécute des tests pour le premier algorithme uniquement
+<npm run test:1> # cette commande exécute des tests pour le premier algorithme uniquement
 npm run test:2 # cette commande exécute des tests pour le deuxième algorithme uniquement
 # etc... pour chaque algorithme.
 ```

@@ -11,8 +11,29 @@
   --textAlign: center;
 }
 
-img {
+header nav {
+  display: flex;
+  margin: var(--gutter) calc(var(--gutter)* 2);
+  justify-content: space-between;
+}
+
+nav img {
   max-width: 100%;
+}
+
+main img {
+ display: block;
+ margin: auto;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+}
+
+main p {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -108,3 +129,22 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+.skills--title {
+  display: none;
+}
+}
+@media (max-width: 700px) {
+.skills {
+  display: flex;
+}
+}
+
+  
+ 
