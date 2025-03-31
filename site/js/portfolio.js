@@ -11,6 +11,7 @@ changeName.addEventListener('click', function () {
     if (yourname) {
         const nameSpan = document.querySelector('firstname');
         firstname.textContent = yourname;
+        firstname.style.color = "white";
     }
 });
 
