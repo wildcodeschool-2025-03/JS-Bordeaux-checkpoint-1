@@ -66,6 +66,7 @@ p {
 .skills {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
