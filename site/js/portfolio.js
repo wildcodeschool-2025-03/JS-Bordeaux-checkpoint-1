@@ -11,8 +11,14 @@ imgAvatar.addEventListener('click', () => {
 const modifyTextBtn = document.querySelector('.description button');
 
 modifyTextBtn.addEventListener('click', () => {
+    const backgroundColor = prompt('Ta couleur batard');
+    const descriptionSection = document.querySelector('.description');
+
+    descriptionSection.style.backgroundColor = backgroundColor;
+
     const newName = prompt('Ton nom batard');
     const currentName = document.querySelector('#firstname');
+
     currentName.innerHTML = newName;
     currentName.style.color = '#ffffff';
 })
