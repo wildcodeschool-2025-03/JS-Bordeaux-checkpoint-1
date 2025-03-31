@@ -6,14 +6,19 @@ avatar.addEventListener('click', () => {
 
 const buttonTextColor = document.querySelector('.modifyTextColor');
 const firstName = document.querySelector('#firstname');
-const description = document.querySelector('.description');
-
+const descriptions = document.querySelectorAll('.description');
+const pinkText = document.querySelectorAll('.pink-text');
 
 buttonTextColor.addEventListener('click', () => {
-    const newFirstName =prompt('Enter your name');
+    const newFirstName = prompt('Enter your name');
     firstName.textContent = newFirstName;
-    firstName.style.color="black";
-    const newDescriptionColor = prompt('Enter a color');
-    description.style.background = newDescriptionColor;
-})
+    firstName.style.color = "black"; 
+    const newDescriptionColor = prompt('Enter a color for descriptions');
+    for (const description of descriptions){
+        description.style.background = newDescriptionColor;
+    }
+    for(const pink of pinkText){
+        pink.style.color = newDescriptionColor;
+    }
+});
 
