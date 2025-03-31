@@ -6,9 +6,14 @@ avatar.addEventListener('click', () => {
 
 const buttonTextColor = document.querySelector('.modifyTextColor');
 const firstName = document.querySelector('#firstname');
+const description = document.querySelector('.description');
+
 
 buttonTextColor.addEventListener('click', () => {
     const newFirstName =prompt('Enter your name');
     firstName.textContent = newFirstName;
     firstName.style.color="black";
+    const newDescriptionColor = prompt('Enter a color');
+    description.style.background = newDescriptionColor;
 })
+
