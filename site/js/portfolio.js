@@ -18,5 +18,6 @@ function onButtonClick(event) {
 	if (enterYourName !== null && enterYourName !== "") {
 		const firstName = document.getElementById("firstname");
 		firstName.innerHTML = enterYourName;
+		document.getElementById("firstname").style.color = "white";
 	}
 }
