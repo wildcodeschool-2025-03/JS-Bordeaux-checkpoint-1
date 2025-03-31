@@ -8,6 +8,7 @@ const buttonTextColor = document.querySelector('.modifyTextColor');
 const firstName = document.querySelector('#firstname');
 const descriptions = document.querySelectorAll('.description');
 const pinkText = document.querySelectorAll('.pink-text');
+const navigationA = document.querySelectorAll('.menu li a');
 
 buttonTextColor.addEventListener('click', () => {
     const newFirstName = prompt('Enter your name');
@@ -20,5 +21,12 @@ buttonTextColor.addEventListener('click', () => {
     for(const pink of pinkText){
         pink.style.color = newDescriptionColor;
     }
+    const newAColor = prompt('Enter a color for navigation');
+    for (const textA of navigationA){
+        textA.style.color = newAColor;
+    }
 });
+
+
+
 
