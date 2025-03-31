@@ -124,3 +124,7 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+main .projects .box .disabled {
+  opacity: 0.50;
+}
