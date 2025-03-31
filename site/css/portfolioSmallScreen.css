@@ -1,3 +1,7 @@
 main section .desktop {
     display: none;
 }
+
+main .skills{
+    flex-direction: column-reverse;
+}
