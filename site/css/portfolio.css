@@ -125,6 +125,18 @@ p {
   color: var(--purple);
 }
 
+main .projects{
+  display: flex;
+  flex-direction: column;
+}
+
+main .projects .boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 main .projects .box .disabled {
   opacity: 0.50;
 }
