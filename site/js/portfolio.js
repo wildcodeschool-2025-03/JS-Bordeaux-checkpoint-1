@@ -11,12 +11,17 @@ imgAvatar.addEventListener('click', () => {
 const modifyTextBtn = document.querySelector('.description button');
 
 modifyTextBtn.addEventListener('click', () => {
-    const backgroundColor = prompt('Ta couleur batard');
-    const descriptionSection = document.querySelector('.description');
-
-    descriptionSection.style.backgroundColor = backgroundColor;
-
+    const newColor = prompt('Ta couleur batard');
     const newName = prompt('Ton nom batard');
+
+    const pinkElements = document.querySelectorAll('.pink-bg, .pink-text');
+
+    // Modifs sur le reste
+    for (pinkElement of pinkElements) {
+        pinkElement.classList.contains('pink-bg') ? pinkElement.style.backgroundColor = newColor : pinkElement.style.color = newColor;
+    }
+
+    // Modifs sur le nom
     const currentName = document.querySelector('#firstname');
 
     currentName.innerHTML = newName;
