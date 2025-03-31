@@ -1,6 +1,6 @@
 :root {
   --radius: 12px;
-
+  
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
@@ -10,6 +10,20 @@
 
   --textAlign: center;
 }
+
+@media screen and (max-width: 700px) {
+  
+#desktop {
+    display: none;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
+
+@media screen and (min-width: 700px) {
 
 img {
   max-width: 100%;
@@ -26,10 +40,25 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.firstBanner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#avatar-bis {
+  height: 200px;
+  width: 200px;
+  margin: auto;
 }
 
 .desktop {
-  margin: 0;
+  display: flex;
+  justify-content: center;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
@@ -52,6 +81,9 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -107,4 +139,5 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
 }
