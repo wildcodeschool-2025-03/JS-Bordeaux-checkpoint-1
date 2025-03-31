@@ -34,6 +34,12 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
 .description {
   color: var(--light);
   display: flex;
@@ -55,6 +61,13 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+}
+
+@media (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .skills--title {
@@ -107,4 +120,8 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 30%;
 }
