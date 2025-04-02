@@ -1,0 +1,8 @@
+figure.desktop {
+  display: none;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column-reverse;
+}

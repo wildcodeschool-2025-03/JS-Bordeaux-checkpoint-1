@@ -21,7 +21,5 @@ test("both length should be 3", () => {
 });
 
 test("data analyst array should include Homer", () => {
-  expect(findSeniors(persons)[1].some((e) => e.name === "Homer")).toBe(
-    true
-  );
+  expect(findSeniors(persons)[1].some((e) => e.name === "Homer")).toBe(true);
 });

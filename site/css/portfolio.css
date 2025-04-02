@@ -23,9 +23,35 @@ p {
   padding: 0 var(--gutter);
 }
 
+/* HEADER */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+}
+
+.menu a {
+  color: var(--purple);
+}
+
+/* First BANNER */
+
+section.first-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.first-banner .banner-content h1,
+p,
+.avatar {
+  margin-bottom: 30px;
 }
 
 .desktop {
@@ -57,8 +83,15 @@ p {
   padding: 0 10%;
 }
 
+.skills-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding-top: 70px;
+}
+
 .skills--title {
-  margin: calc(var(--gutter) * -2) 0;
+  margin: calc(var(--gutter) * -4) 0;
   text-align: var(--textAlign);
 }
 
@@ -67,20 +100,21 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
-  border-radius: var(--radius);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
+  /* border-radius: var(--radius); */
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 100%;
 }
 
 .column:first-of-type {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-right-radius: var(--radius);
+  border-top-right-radius: var(--radius);
 }
 
 .column:last-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 .column ul {
@@ -92,6 +126,17 @@ p {
   color: var(--lightWildColor);
 }
 
+.all-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .projects a {
   color: var(--purple);
 }
@@ -105,6 +150,11 @@ p {
   box-shadow: var(--styledShadow);
 }
 
+.box a.disabled,
+.box a:disabled {
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
 .purple-text {
   color: var(--purple);
 }
