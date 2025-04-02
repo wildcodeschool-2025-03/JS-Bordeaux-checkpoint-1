@@ -2,7 +2,34 @@ figure.desktop {
   display: none;
 }
 
+.description p {
+  width: 100%;
+}
+
+.description button {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
 .skills-content {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.all-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 90%;
+}
+
+.column .form-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

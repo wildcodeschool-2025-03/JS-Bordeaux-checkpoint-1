@@ -35,10 +35,6 @@ header nav {
   margin-bottom: var(--gutter);
 }
 
-.menu a {
-  color: var(--purple);
-}
-
 /* First BANNER */
 
 section.first-banner {
@@ -51,12 +47,12 @@ section.first-banner {
 section.first-banner .banner-content h1,
 p,
 .avatar {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .desktop {
   margin: 0;
-  margin-top: calc(var(--gutter) * 5);
+  margin-top: calc(var(--gutter) * 2);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
@@ -71,6 +67,16 @@ p,
 .description p {
   width: 60%;
   text-align: var(--textAlign);
+}
+
+.description button {
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
 }
 
 .pink-bg {
@@ -122,6 +128,27 @@ p,
   padding: 0;
 }
 
+.column .form-skills input {
+  padding: 10px;
+}
+
+.column .form-skills button {
+  background-color: #ffc0cb;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.column .modify-skills {
+  padding: 10px;
+  background-color: #ffc0cb;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .pink-text {
   color: var(--lightWildColor);
 }
@@ -136,6 +163,7 @@ p,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .projects a {
   color: var(--purple);
